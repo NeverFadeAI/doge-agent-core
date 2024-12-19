@@ -5,7 +5,7 @@ AI Agent-driven backend for dogecoin.ai platform.
 ## Project Structure
 ```python
 doge_agent_core/
-├── src/
+├── app/
 │   ├── agents/
 │   │   ├── __init__.py
 │   │   ├── base.py           # Agent基类
@@ -42,8 +42,9 @@ doge_agent_core/
 │   │
 │   ├── storage/
 │   │   ├── __init__.py
-│   │   ├── mysql.py       # MySQL存储
-│   │   └── redis.py       # Redis缓存
+│   │   ├── milvus_manager.py   # Milvus向量数据库存储
+│   │   ├── mysql.py            # MySQL存储
+│   │   └── redis.py            # Redis缓存
 │   │
 │   └── api/
 │       ├── __init__.py
@@ -65,5 +66,5 @@ doge_agent_core/
 │   └── development.md
 │
 ├── requirements.txt     # 依赖
-├── setup.py            # 安装配置
+├── api_doge.py            # 安装配置
 └── README.md           # 项目说明

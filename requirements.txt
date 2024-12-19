@@ -1,0 +1,10 @@
+fastapi
+aiologger
+aioredis
+aiohttp_socks
+langchain
+langchain_openai
+langchain_community
+apscheduler
+aiomysql
+uvicorn
